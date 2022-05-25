@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(https://bebs.org/wp-content/uploads/2019/05/form-background-1024x683.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .container {
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+        .container label,input {
+            margin: 5px 5px;
+        }
+        .container label {
+            font-size: 20px;
+        }
+        .container input {
+            border-radius: 5px;
+            padding: 5px;
+        }
+         .btn {
+            margin: 10px;
+            padding: 5px;
+            width: 200px;
+            cursor: pointer;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(102, 105, 102);
+            height: 30px;
+            border: none ;
+            border-radius: 5px;
+        }
+        .container .btn:hover{
+            background-color: rgb(25, 207, 25);
+            color: black;
+            
+
+        }
+        .inst{
+            text-align: center;
+            font-family:  Courier, monospace;
+            font-size: 20px;
+
+        }
+        .mon{
+            margin-left: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>ADMIN FORM</h1>
+    </center>
+    <div class="container">
+        <form method="post" action="admin.php">
+
+            <label for=" first_name">First Name </label>
+            <input type="text" placeholder="Enter your first name" name ="first_name"> <br>
+
+            <label for="last_name">Last Name</label>
+            <input type="text" placeholder="Enter your last name" name ="last_name"> <br>
+
+            <label for="month" >Month</label>
+            <input type="number" class="mon" name ="months"> <br>
+
+            <label for="customer"> Customer Id</label>
+            <input type="number" placeholder="Enter your Id " name ="customer"> <br>
+
+            <label for="units"> No of Units</label>
+            <input type="number" placeholder="Enter your Units" name ="units"> <br>
+
+            <button type="submit" class="btn"> Submit</button>
+    </form>
+    <div class="inst">
+        <h3>Instructions</h3>
+        <p>Write your name correctly. it is a website for who want to get their consumption of electricity</p>
+    </div>
+</div>
+
+
+</body>
+
+</html>
